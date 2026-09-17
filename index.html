@@ -1,63 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio Rafaella Felix</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     <header class="header">
-        <h1>Meu Portfolio</h1>
+        <div class="header-title">
+            <h1>Meu Portfolio</h1>
+        </div>
+
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"> </i>
+        </div>
+
     </header>
-    <main>
-        <div class="about">
-            <img  src="img/perfil.jpg" alt="Foto de Perfil">
-            <div class="about-text">
-                <h2>Sobre Mim</h2>
-                <p>Sou estudante de Ciência da Computação na FMU, com conclusão prevista para 2030. Tenho interesse em desenvolvimento de software e tecnologia, com conhecimentos em HTML, CSS, JavaScript e ferramentas de desenvolvimento. Também possuo formação em Desenvolvimento Web e Front-End, além de conhecimentos em Photoshop e Excel. Sou uma pessoa criativa, dedicada e com facilidade para aprender, buscando constantemente desenvolver minhas habilidades e adquirir novas experiências na área de tecnologia.</p>
-            </div>
-        </div>
+        <main>
+            <section class="about">
+                <img src="img/my-kids.jpeg" alt="Foto de Rafaella Felix">
+                <div class="text-about">            
+                    <h2>Sobre Mim</h2>
+                    <p>Sou estudante de Ciência da Computação, com conclusão prevista para 2030, e tenho interesse em Tecnologia, Desenvolvimento Web e Front-end. Venho desenvolvendo conhecimentos em HTML5, CSS3, JavaScript, Java, C, lógica de programação e Excel, além de Adobe Photoshop.
+                    </p>
 
-        <div class="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Desenvolvimento Web</li>
-                <li>Photoshop</li>
-                <li>Excel</li>
-            </ul>
-        </div>
+                    <p>Tenho formação em Desenvolvimento Web pela AFESU Veleiros e Desenvolvimento Front-End pelo SENAI, além de experiência em projetos pessoais e voluntários envolvendo tecnologia, design e criação de conteúdo digital.
+                    </p>
+                </div>       
+            </section>
 
-        <div class="formacoes">
-            <h2>Formações Acadêmicas</h2>
+            <section class="projects">
+                <h2>Projetos</h2>
+                <a href="https://github.com/Rafamfa/Par.SaoJose" target="_blank">
+                    <img src="img/projeto-1.png" alt="Projeto 1">
+                </a>
+                <a href="https://github.com/Rafamfa/XV-Ana-Carolina" target="_blank">
+                    <img src="img/projeto-2.png" alt="Projeto 2">
+                </a>
+            </section>
 
-            <div class="formacoes-list">
-                <p>Ciência da Computação - FMU (2026-2030)</p>
-                <p>Ensino Médio - E.E. João Evangelista (2023-2025)</p>
-            </div>
-        </div>
 
-        <div class="button">
-            <a href="https://trello.com/u/rafaellamariafelixdearruda/boards">Trello</a>
+            <section>
+                <div class="formacoes">
+                    <h2>Formações Acadêmicas</h2>
 
-            <a href="https://github.com/Rafamfa">Github</a>
+                    <div class="formacoes-list">
+                        <p>Ciência da Computação - FMU (2026-2030)</p>
+                        <p>Ensino Médio - E.E. João Evangelista (2023-2025)</p>
+                    </div>
+                </div>
+            </section>
 
-            <a href="https://www.linkedin.com/in/rafaellafelix/">Linkedin</a>
-        </div>
+            <section class="cursos">
+                <h2>Cursos e Certificações</h2>
+                <div class="cursos-container">
+                    <div class="curso-card">Desenvolvedor Front-end - SENAI (160h)</div>
+                    <div class="curso-card">Desenvolvimento Web: HTML, CSS, JavaScript, UX e Acessibilidade Web - Afesu Veleiros (410h)</div>
+                    <div class="curso-card">Excel - Alura (8h)</div>
+                    <div class="curso-card">Photoshop para Mídias Sociais - SENAC (36h)</div>
+                </div>
+            </section>
 
-        <div class="contato">
-            <p>WhatsApp: (11) 9 1234-5678</p>
-            <p>São Paulo/SP</p>
-        </div>
-    </main>
+            <section>
+                <div class="habilidades">
+                    <h2>Habilidades</h2>
+                    <ul class="habilidades-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Desenvolvimento Web</li>
+                        <li>Photoshop</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>                
+            </section>
+
+            <section>
+                <div class="button">
+                    <a href="https://trello.com/u/rafaellamariafelixdearruda/boards" target="_blank">Trello</a>
+                    <a href="https://github.com/Rafamfa" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/rafaellafelix/" target="_blank">Linkedin</a>
+                </div>
+            </section>
+
+            <section class="contato">
+                <h2>COntatO</h2>
+                <div class="contato-list">
+                    <p>Email: rafaellamariafelixdearruda@gmail.com</p>
+                    <p>WhatsApp: (11) 9 1234-5678</p>
+                    <p>São Paulo/SP</p>
+                </div>
+            </section>
+        </main>
 
     <footer class="footer">
         <p>© 2026 Rafaella Felix - Todos os direitos reservados</p>
     </footer>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>

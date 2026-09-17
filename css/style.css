@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caacupe+One&family=Cinzel+Decorative:wght@400;700;900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
 
-:root {
-    --background-color: #0F172A;
-    --text-color: #F5F0E6;
-    --secondary-color: #214270;
-    --font-family: 'Quicksand', sans-serif;
+:root[data-theme="dark"]  {
+    --background-color: #0b1220;
+    --secondary-color: #203855;
+    --text-color: aliceblue;
+}
+
+:root[data-theme="light"]  {
+    --background-color: #F5F0E6;
+    --secondary-color: #93adcd;
+    --text-color: #203855;
 }
 
 html, body {
-    margin: 0 ;
+    margin: 0;
     min-height: 100%;
-}
-
-h2 {
-    font-family: "Cinzel Decorative";
-    text-align: center;
 }
 
 body {
@@ -25,67 +25,173 @@ body {
     color: var(--text-color);
 }
 
-main{
-    margin: 10px 10px;
+h2 {
+    font-family: "Cinzel Decorative";
+    text-align: center;
+    margin-top: 100px;
 }
 
 .header {
-    font-family: "Cinzel Decorative";
+    font-family: "cinzel decorative";
     background: var(--secondary-color);
     color: var(--text-color);
     display: flex;
     position: relative;
-    z-index: 1000;
-    gap: 20px;
-    justify-content: center;
-    text-align: center;
+    height: 85px;
 }
 
-img {
+.header-title {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+}
+
+#toggleTheme {
+    font-size: 1.8rem; 
+    color: var(--text-color);
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.main{
+    flex: 1px;
+    text-align: center;
+    justify-content: center;
+}
+.about {
+    display: flex;
+}
+
+.text-about {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.text-about h2{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.about img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 20px auto;
-    display: block;
+    margin-top: 20px;
+    border: 2px solid var(--secondary-color);
 }
 
-.about {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+
+
+.projects {
+    margin-top: 20px;
+    text-align: center;
 }
 
-.about-text h2 {
-    max-width: 600px;
-    font-family: "Cinzel Decorative";
-    text-align: left;
+.projects img {
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    border: 2px solid var(--secondary-color);
 }
+
+
+
 
 .formacoes{
-    text-align: center;    
+    text-align: center;  
 }
 
-.formacoes p{
+.formacoes-list {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.formacoes-list p{
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--text-color);
     flex: 1;
-    margin: 15px 100px;
 }
 
-.button {
+
+.habilidades-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.habilidades ul{
     text-align: center;
-    margin: 20px 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    gap: 15px;
+}
+
+.habilidades li{
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+}
+
+
+
+
+.cursos {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cursos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+  max-width: 900px; 
+  margin: 0 auto;
+}
+
+.curso-card {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+
+.button {
+    margin-top: 40px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
 }
 
 .button a {
     font-family: "Archivo Black";
     color: var(--text-color);
     text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    gap: 100px;   
 }
 
-.button a:hover{
+.button :hover{
     color: var(--secondary-color);
     text-decoration: underline;
 }
@@ -95,9 +201,10 @@ img {
     text-align: center;
 }
 
+
 .footer{
-    padding: 10px 0;
     background: var(--secondary-color);
     text-align: center;
     margin-top: auto;
+    color: var(--text-color);
 }
